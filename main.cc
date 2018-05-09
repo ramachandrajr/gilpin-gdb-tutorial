@@ -71,7 +71,7 @@ public:
           return 0;
         } else {
           temp->next (marker->next());
-          delete temp;
+          delete marker;
           temp = 0;
           return 0;
         }
