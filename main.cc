@@ -61,7 +61,10 @@ public:
             delete marker; // marker is the only element in the list
             marker = 0;
           } else {
-            head_ = new Node<T>(marker->value(), marker->next());
+            head_ = new Node<T>(
+              marker->next()->value(),
+              marker->next()->next()
+            );
             delete marker;
             marker = 0;
           }
