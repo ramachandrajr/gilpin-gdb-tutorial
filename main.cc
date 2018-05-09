@@ -6,7 +6,8 @@
 // tutorial. The tutorial can be found on the web at
 // http://students.cec.wustl.edu/~agg1/tutorial/
 
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 int number_instantiated = 0;
 
@@ -72,7 +73,6 @@ public:
           return 0;
         }
       }
-      marker = 0;  // reset the marker
       temp = marker;
       marker = marker->next();
     }
